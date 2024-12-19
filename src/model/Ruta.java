@@ -18,8 +18,8 @@ public class Ruta {
         
         this.distancia = calcDistancia(this.aeropuertoDestino.getCiudad(),this.aeropuertoOrigen.getCiudad());
         
-        this.tiempoDeVuelo =  this.distancia * 0.140;
-    }
+            this.tiempoDeVuelo =  this.distancia * 0.140;
+        }
 
     public double getDistancia() {
         return distancia;

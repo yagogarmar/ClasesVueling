@@ -26,7 +26,7 @@ public class Vuelo {
         this.wifiGratis = wifiGratis;
         
         // OBTENER EL AVION 
-        ArrayList<Avion> avionesTipOK = null;
+        ArrayList<Avion> avionesTipOK = new ArrayList<Avion>();
         
         if (ruta.distancia < 1300) {
             for (Avion elemento : listaAviones) {
@@ -55,9 +55,12 @@ public class Vuelo {
         }
         
         Random random = new Random();
-        int num = random.nextInt(avionesTipOK.size());
-        this.avion = avionesTipOK.get(num);
-        this.avion.setStatus(false);
+        if (!avionesTipOK.isEmpty()) {
+            int num = random.nextInt(avionesTipOK.size());
+            this.avion = avionesTipOK.get(num);
+            this.avion.setStatus(false);
+        }
+       
          
          
          

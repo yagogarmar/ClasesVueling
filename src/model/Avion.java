@@ -24,6 +24,7 @@ public class Avion {
         this.modeloAvion = modeloAvion;
         this.distaciaMax = distaciaMax;
         this.matricula = matricula;
+        this.status = true;
     }
 
     public Avion(){
