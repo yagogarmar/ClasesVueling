@@ -7,8 +7,8 @@ public class BilleteEjecutivo extends Billete{
     private boolean cateringPersonalizado;
     private float capacidadEquipajeAdicional;
 
-    public BilleteEjecutivo(boolean accesoSalaVip, boolean cateringPersonalizado, float capacidadEquipajeAdicional, Vuelo vuelo, ArrayList<Persona> personas, String asiento, int grupo, float precioAñadido) {
-        super(vuelo, personas, asiento, grupo, precioAñadido);
+    public BilleteEjecutivo(boolean accesoSalaVip, boolean cateringPersonalizado, float capacidadEquipajeAdicional, Vuelo vuelo, Persona persona, String asiento, int grupo, float precioAñadido) {
+        super(vuelo, persona, asiento, grupo, precioAñadido);
         this.accesoSalaVip = accesoSalaVip;
         this.cateringPersonalizado = cateringPersonalizado;
         this.capacidadEquipajeAdicional = capacidadEquipajeAdicional;

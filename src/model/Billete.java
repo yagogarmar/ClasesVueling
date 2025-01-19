@@ -6,15 +6,15 @@ import java.util.ArrayList;
 
 public abstract class  Billete {
     private Vuelo vuelo;
-    private ArrayList<Persona> personas;
+    private Persona persona;
     private String asiento;
     private int grupo;
     private float precioAñadido;
     private String puerta;
 
-    public Billete(Vuelo vuelo, ArrayList<Persona> personas, String asiento, int grupo, float precioAñadido) {
+    public Billete(Vuelo vuelo, Persona persona, String asiento, int grupo, float precioAñadido) {
         this.vuelo = vuelo;
-        this.personas = personas;
+        this.persona = persona;
         this.asiento = asiento;
         this.grupo = grupo;
         this.precioAñadido = precioAñadido;
@@ -28,12 +28,12 @@ public abstract class  Billete {
         this.vuelo = vuelo;
     }
 
-    public ArrayList<Persona> getPersonas() {
-        return personas;
+    public Persona getPersonas() {
+        return persona;
     }
 
-    public void setPersonas(ArrayList<Persona> personas) {
-        this.personas = personas;
+    public void setPersonas(Persona persona) {
+        this.persona = persona;
     }
 
     public String getAsiento() {
@@ -62,7 +62,7 @@ public abstract class  Billete {
 
     @Override
     public String toString() {
-        return "Billete{" + "vuelo=" + vuelo + ", personas=" + personas + ", asiento=" + asiento + ", grupo=" + grupo + ", precioA\u00f1adido=" + precioAñadido + '}';
+        return "Billete{" + "vuelo=" + vuelo + ", personas=" + persona + ", asiento=" + asiento + ", grupo=" + grupo + ", precioA\u00f1adido=" + precioAñadido + '}';
     }
     
     

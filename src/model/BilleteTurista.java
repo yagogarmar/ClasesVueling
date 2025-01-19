@@ -7,8 +7,8 @@ public class BilleteTurista extends Billete{
     private float pesoEquipaje;
 
 
-    public BilleteTurista(boolean incluyeComida, float pesoEquipaje, Vuelo vuelo, ArrayList<Persona> personas, String asiento, int grupo, float precioAñadido) {
-        super(vuelo, personas, asiento, grupo, precioAñadido);
+    public BilleteTurista(boolean incluyeComida, float pesoEquipaje, Vuelo vuelo, Persona persona, String asiento, int grupo, float precioAñadido) {
+        super(vuelo, persona, asiento, grupo, precioAñadido);
         this.incluyeComida = incluyeComida;
         this.pesoEquipaje = pesoEquipaje;
     }

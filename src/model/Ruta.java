@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Objects;
 import model.data.EnumCiudades;
 
 public class Ruta {
@@ -93,6 +94,28 @@ public class Ruta {
         // Distancia en kilómetros
         return R * c;
 
+    }
+    
+    /**
+     *
+     * @param obj
+     * @return
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Ruta other = (Ruta) obj;
+        return aeropuertoOrigen.equals(other.aeropuertoOrigen) &&
+               aeropuertoDestino.equals(other.aeropuertoDestino);
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.aeropuertoOrigen);
+        hash = 79 * hash + Objects.hashCode(this.aeropuertoDestino);
+        return hash;
     }
 
 }

@@ -7,22 +7,18 @@ public class Persona {
     private String nombre;
     private String apellidos;
     private String DNI;
-    private LocalDate fechaNacimiento;
-    private char genero;
+    private String fechaNacimiento;
     private String email;
     private String telefono;
-    private String ciudad;
     private String pais;
 
-    public Persona(String nombre, String apellidos, String DNI, LocalDate fechaNacimiento, char genero, String email, String telefono, String ciudad, String pais) {
+    public Persona(String nombre, String apellidos, String DNI, String fechaNacimiento,  String email, String telefono, String pais) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.DNI = DNI;
         this.fechaNacimiento = fechaNacimiento;
-        this.genero = genero;
         this.email = email;
         this.telefono = telefono;
-        this.ciudad = ciudad;
         this.pais = pais;
     }
 
@@ -50,22 +46,6 @@ public class Persona {
         this.DNI = DNI;
     }
 
-    public LocalDate getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public char getGenero() {
-        return genero;
-    }
-
-    public void setGenero(char genero) {
-        this.genero = genero;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -82,13 +62,6 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
 
     public String getPais() {
         return pais;
@@ -108,10 +81,8 @@ public class Persona {
         sb.append(", apellidos=").append(apellidos);
         sb.append(", DNI=").append(DNI);
         sb.append(", fechaNacimiento=").append(fechaNacimiento);
-        sb.append(", genero=").append(genero);
         sb.append(", email=").append(email);
         sb.append(", telefono=").append(telefono);
-        sb.append(", ciudad=").append(ciudad);
         sb.append(", pais=").append(pais);
         sb.append('}');
         return sb.toString();

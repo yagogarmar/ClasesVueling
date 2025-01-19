@@ -15,7 +15,7 @@ public enum EnumModelos {
     AIRBUS_A350(54, 6),
     BOEING_757(34, 6),
     BOEING_747(52, 8),
-    AIRBUS_A380(92, 6);
+    AIRBUS_A380(52, 8);
 
     
     private final int rows;

@@ -71,6 +71,7 @@ public class Avion {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+    
 
     @Override
     public String toString() {

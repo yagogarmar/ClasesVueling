@@ -8,8 +8,8 @@ public class BilletePrimeraClase extends Billete{
     private String kitDeLujo;
     private boolean servicioChofer;
 
-    public BilletePrimeraClase(boolean asientoReclinableTotal, String kitDeLujo, boolean servicioChofer, Vuelo vuelo, ArrayList<Persona> personas, String asiento, int grupo, float precioAñadido) {
-        super(vuelo, personas, asiento, grupo, precioAñadido);
+    public BilletePrimeraClase(boolean asientoReclinableTotal, String kitDeLujo, boolean servicioChofer, Vuelo vuelo, Persona persona, String asiento, int grupo, float precioAñadido) {
+        super(vuelo, persona, asiento, grupo, precioAñadido);
         this.asientoReclinableTotal = asientoReclinableTotal;
         this.kitDeLujo = kitDeLujo;
         this.servicioChofer = servicioChofer;
